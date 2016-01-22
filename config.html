@@ -183,7 +183,7 @@ $(function() {
 	    	comm_error();
 	    	return;
 	    }
-	    $.get( "http://192.168.0.1/system-version" ).fail(function(){cloud_connect_time = 60000;});
+	    $.get( "http://192.168.0.1/version" ).fail(function(){cloud_connect_time = 60000;});
 	    sap.publicKey(pubkey_callback);
 	}
 
